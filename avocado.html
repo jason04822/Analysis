@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Avocado Analysis Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1, h2 { text-align: center; }
+        iframe { width: 100%; height: 500px; margin-bottom: 20px; }
+        .analysis { font-size: 16px; color: #333; margin-bottom: 20px; padding: 10px; background-color: #f9f9f9; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Avocado Pricing and Inventory Analysis</h1>
+    <h2>Price Trends by Type</h2>
+    <iframe src="price_trends.html"></iframe>
+    <div class="analysis">Organic and conventional avocado prices are positively correlated, moving in tandem but with organic consistently priced higher. Also, Prices show a seasonal pattern, peaking 2017 (July to Oct) when demand is likely high, and dipping early in the year (January to March) when demand may be lower or supply higher.</div>
+    <h2>Top Regions by Volume</h2>
+    <iframe src="top_regions_volume.html"></iframe>
+    <div class="analysis">The West and California regions dominate avocado volume, contributing over a billion units each from 2015-2018. Other regions like New York show significantly lower volumes, highlighting regional demand disparities.</div>
+    <h2>Volume Share by Year</h2>
+    <iframe src="volume_share.html"></iframe>
+    <div class="analysis">Both type of avocado volumes peaked around mid-2017 and declined thereafter, suggesting a potential shift in consumer preference or supply issues.</div>
+    <h2>Price vs. Volume</h2>
+    <iframe src="price_volume_scatter.html"></iframe>
+    <div class="analysis">The scatter plot reveals that higher volumes of conventional avocados are associated with lower prices, whereas organic avocados show a wider price range with lower volumes, indicating potential supply scarcity or premium pricing.</div>
+</body>
+</html>

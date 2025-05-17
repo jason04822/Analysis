@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason - Data Analytics Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        
+        .certificate-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .certificate-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .certificate-logo {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white rounded-xl shadow-md py-4 mx-6 mt-6 sticky top-6 z-50 max-w-7xl mx-auto">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">Jason</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-blue-600 transition-colors duration-200">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors duration-200">About</a>
+                <a href="#certificates" class="text-gray-600 hover:text-blue-600 transition-colors duration-200">Certificates</a>
+                <a href="#projects" class="text-gray-600 hover:text-blue-600 transition-colors duration-200">Projects</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors duration-200">Contact</a>
+            </div>
+            <div class="flex space-x-4">
+                <a href="https://www.linkedin.com/in/jason-ho-179aba341/" target="_blank" class="text-gray-600 hover:text-blue-600 transition-colors duration-200">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="container mx-auto px-6 py-20 flex flex-col md:flex-row items-center">
+        <!-- Image -->
+        <div class="md:w-1/2 flex justify-center mb-12 md:mb-0">
+            <div class="relative">
+                <div class="w-80 h-80 bg-blue-100 rounded-full flex items-center justify-center shadow-lg">
+                    <img src="me.jpg" alt="Jason's Photo" class="w-72 h-72 rounded-full object-cover border-4 border-white">
+                </div>
+            </div>
+        </div>
+        <!-- Text and Buttons -->
+        <div class="md:w-1/2 text-center md:text-left">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Hello! I'm Jason</h2>
+            <p class="text-lg text-gray-600 mb-8 max-w-lg">
+                I am studying Data Science and Artificial Intelligence at Hong Kong Metropolitan University. I'm passionate about uncovering insights from data to drive impactful decisions.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#projects" class="bg-sky-200 text-white px-6 py-3 rounded-full hover:bg-sky-300 transition-colors duration-200 shadow-md">See My Work</a>
+                <a href="#contact" class="bg-sky-200 text-white px-6 py-3 rounded-full hover:bg-sky-300 hover:text-white transition-colors duration-200">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto px-6 py-20 bg-white rounded-xl shadow-sm mt-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">About Me</h2>
+        <p class="text-lg text-gray-600 max-w-4xl mx-auto text-center">
+            I'm a dedicated data analyst with a strong background in statistical analysis, data visualization, and predictive modeling. My expertise lies in transforming raw data into actionable insights using tools like Python, SQL, SAS Programming, and PowerBi. I thrive on solving complex problems and delivering value through data-driven decisions.Participating the Metro Challenge from HKMU and being a AI & IT role,(making a website and deploy AI model) and won the $100,000 funding.
+        </p>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="container mx-auto px-6 py-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center">Certifications</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <!-- Google Data Analytics Certificate -->
+            <div class="certificate-card bg-white p-6 rounded-xl shadow-md">
+                <div class="flex items-start">
+                    <div class="bg-white p-2 rounded-lg mr-4 flex items-center justify-center">
+                        <img src="gg.jpg" alt="Google Logo" class="certificate-logo">
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Google Data Analytics Professional Certificate</h3>
+                        <p class="text-gray-600 mb-3">Credential ID: P63AGLBYF8FL</p>
+                        <a href="https://www.coursera.org/account/accomplishments/specialization/P63AGLBYF8FL" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+                            View Certificate
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AWS Cloud Practitioner Certificate -->
+            <div class="certificate-card bg-white p-6 rounded-xl shadow-md">
+                <div class="flex items-start">
+                    <div class="bg-white p-2 rounded-lg mr-4 flex items-center justify-center">
+                        <img src="aws.png" alt="AWS Logo" class="certificate-logo">
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">AWS Cloud Practitioner Essentials</h3>
+                        <p class="text-gray-600 mb-3">Amazon Web Services</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+                            View Certificate
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                        </a>
+                    </div>
+    x            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container mx-auto px-6 py-20">
+        <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+         <!-- Avocado Analysis Project -->
+            <div class="project-card bg-white p-8 rounded-xl shadow-md hover:shadow-lg">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Avocado Pricing & Inventory Analysis</h3>
+                <p class="text-gray-600 mb-6">
+                    Analyzed avocado pricing and inventory data to uncover trends, regional contributions, and price-volume relationships using Python and visualization tools.
+                </p>
+                <alt="Avocado Analysis" class="w-full h-auto rounded-lg mb-4">
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="bg-sky-200 text-white  px-3 py-1 rounded-full text-sm">Python</span>
+                    <span class="bg-sky-200 text-white  px-3 py-1 rounded-full text-sm">Pandas</span>
+                    <span class="bg-sky-200 text-white  px-3 py-1 rounded-full text-sm">Matplotlib</span>
+                </div>
+                    <a href="avocado.html" target="_blank" class="text-blue-600 hover:test-blue-800 font-medium inline-flex items-center">
+                        See the analysis
+                    </a>
+                    <span class="text-gray-400">|</span>
+                    <a href="https://www.kaggle.com/datasets/neuromusic/avocado-prices" target="_blank" class="text-blue-600 hover:test-blue-800 font-medium inline-flex items-center">
+                         Dataset
+                     </a>              
+                </div>
+            
+            <!-- Mental health Project -->
+            <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Student Mental Health Analysis</h3>
+                <p class="text-gray-600 mb-6">
+                    Analyzed the relationship about the student's mental health with different features like GPA, sleep quality, financial problem. (This is the group project of my SAS programming course)
+                </p>
+                <alt="Avocado Analysis" class="w-full h-auto rounded-lg mb-4">
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="bg-sky-200 text-white  px-3 py-1 rounded-full text-sm">SAS Programming</span>
+                    <span class="bg-sky-200 text-white  px-3 py-1 rounded-full text-sm">Statistic</span>
+                </div>
+                    <a href="MentalHealth.pdf" target="_blank" class="text-blue-600 hover:test-blue-800 font-medium inline-flex items-center">
+                        See the analysis
+                    </a>
+                    <span class="text-gray-400">|</span>
+                    <a href="https://www.kaggle.com/datasets/sonia22222/students-mental-health-assessments" target="_blank" class="text-blue-600 hover:test-blue-800 font-medium inline-flex items-center">
+                         Dataset
+                     </a>              
+                </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mx-auto px-6 py-20 bg-white rounded-xl shadow-sm">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Contact Me</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto text-center mb-12">
+            I'm always open to discussing data analytics opportunities or collaborations. Reach out via email or connect with me on LinkedIn.
+        </p>
+        
+        <div class="max-w-2xl mx-auto bg-gray-50 p-8 rounded-xl shadow-inner">
+            <form class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-gray-700 mb-2">Name</label>
+                        <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 mb-2">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                </div>
+                <div>
+                    <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+                    <input type="text" id="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label for="message" class="block text-gray-700 mb-2">Message</label>
+                    <textarea id="message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-md">
+                    Send Message
+                </button>
+            </form>
+        </div>
+        
+        <div class="flex justify-center space-x-8 mt-12">
+            <a href="mailto:jason04822@gmail.com" class="flex items-center text-gray-600 hover:text-blue-600 transition-colors duration-200">
+                <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+                jason04822@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/jason-ho-179aba341/" target="_blank" class="flex items-center text-gray-600 hover:text-blue-600 transition-colors duration-200">
+                <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+                LinkedIn
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 mt-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="text-2xl font-bold mb-2">Jason</div>
+                    <p class="text-gray-400">Data Analyst & AI Enthusiast</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#home" class="text-gray-400 hover:text-white transition-colors duration-200">Home</a>
+                    <a href="#about" class="text-gray-400 hover:text-white transition-colors duration-200">About</a>
+                    <a href="#certificates" class="text-gray-400 hover:text-white transition-colors duration-200">Certificates</a>
+                    <a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-200">Contact</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2025 Jason. All rights reserved.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
