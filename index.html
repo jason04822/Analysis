@@ -112,49 +112,84 @@
         </p>
     </section>
 
-    <!-- Certificates Section -->
-    <section id="certificates" class="container mx-auto px-6 py-12">
-        <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center">Certifications</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <!-- Google Data Analytics Certificate -->
-            <div class="certificate-card bg-white p-6 rounded-xl shadow-md">
-                <div class="flex items-start">
-                    <div class="bg-white p-2 rounded-lg mr-4 flex items-center justify-center">
-                        <img src="gg.jpg" alt="Google Logo" class="certificate-logo">
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Google Data Analytics Professional Certificate</h3>
-                        <p class="text-gray-600 mb-3">Credential ID: P63AGLBYF8FL</p>
-                        <a href="https://www.coursera.org/account/accomplishments/specialization/P63AGLBYF8FL" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
-                            View Certificate
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                            </svg>
-                        </a>
-                    </div>
+<!-- Certificates Section -->
+<section id="certificates" class="container mx-auto px-6 py-12">
+    <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center">Certifications</h2>
+    
+    <!-- Horizontal scroll container -->
+    <div class="flex space-x-6 overflow-x-auto pb-4">
+        
+        <!-- Google Data Analytics Certificate -->
+        <div class="certificate-card bg-white p-6 rounded-xl shadow-md w-[450px] flex flex-col justify-between">
+            <div class="flex items-start">
+                <div class="bg-white p-2 rounded-lg mr-4 flex items-center justify-center">
+                    <img src="gg.jpg" alt="Google Logo" class="certificate-logo">
                 </div>
-            </div>
-
-            <!-- AWS Cloud Practitioner Certificate -->
-            <div class="certificate-card bg-white p-6 rounded-xl shadow-md">
-                <div class="flex items-start">
-                    <div class="bg-white p-2 rounded-lg mr-4 flex items-center justify-center">
-                        <img src="aws.png" alt="AWS Logo" class="certificate-logo">
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">AWS Cloud Practitioner Essentials</h3>
-                        <p class="text-gray-600 mb-3">Amazon Web Services</p>
-                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
-                            View Certificate
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                            </svg>
-                        </a>
-                    </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 break-words">
+                        Google Data Analytics Professional Certificate
+                    </h3>
+                    <p class="text-gray-600 mb-3">Credential ID: P63AGLBYF8FL</p>
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/P63AGLBYF8FL" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+                        View Certificate
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6v10h10V6h-4m4 0h6v6h-6z"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
+
+        <!-- AWS Cloud Practitioner Certificate -->
+        <div class="certificate-card bg-white p-6 rounded-xl shadow-md w-[450px] flex flex-col justify-between">
+            <div class="flex items-start">
+                <div class="bg-white p-2 rounded-lg mr-4 flex items-center justify-center">
+                    <img src="aws.png" alt="AWS Logo" class="certificate-logo">
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 break-words">
+                        AWS Cloud Practitioner Essentials
+                    </h3>
+                    <p class="text-gray-600 mb-3">Amazon Web Services</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+                        View Certificate
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6v10h10V6h-4m4 0h6v6h-6z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Databases and SQL for Data Science with Python -->
+        <div class="certificate-card bg-white p-6 rounded-xl shadow-md w-[450px] flex flex-col justify-between">
+            <div class="flex items-start">
+                <div class="bg-white p-2 rounded-lg mr-4 flex items-center justify-center">
+                    <img src="IBM.png" alt="Azure Logo" class="certificate-logo">
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 break-words">
+                    Databases and SQL for Data Science with Python
+                    </h3>
+                    <p class="text-gray-600 mb-3">Credential ID: XYZ123456</p>
+                    <a href="#" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+                           <a href="https://www.coursera.org/account/accomplishments/verify/1H56KV0IBQEZ" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+                        View Certificate
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6v10h10V6h-4m4 0h6v6h-6z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    </div>
+</section>
+
 
     <!-- Projects Section -->
     <section id="projects" class="container mx-auto px-6 py-20">
